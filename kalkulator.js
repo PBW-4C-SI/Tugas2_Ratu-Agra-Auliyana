@@ -22,8 +22,8 @@ const calc = (operator, ...numbers) => {
     return result;
 }
 
-console.log(calc('+', 10, 4, 3)); 
-console.log(calc('-', 95, 5));
-console.log(calc('*', 20, 4, 2));
-console.log(calc('/', 100, 2));
-console.log(calc('%', 30, 3));
+document.body.innerHTML += `<p>10 + 4 + 3 = ${calc('+', 10, 4, 3)}</p>`;
+document.body.innerHTML += `<p>95 - 5 = ${calc('-', 95, 5)}</p>`;
+document.body.innerHTML += `<p>20 * 4 * 2 = ${calc('*', 20, 4, 2)}</p>`;
+document.body.innerHTML += `<p>100 / 2 = ${calc('/', 100, 2)}</p>`;
+document.body.innerHTML += `<p>30 % 3 = ${calc('%', 30, 3)}</p>`;
